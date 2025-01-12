@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "3505ae0d-b2e6-4fa2-90ea-7983df6cc2c9",
+		"name": "Daos.run",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28318427"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/api/user/link-twitter-wallet",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"twitterId\": \"1234567890\",\n  \"timestamp\": \"2024-12-31T08:31:04.357Z\",\n  \"walletAddress\": \"0x162D5148d6E64B0C294A51A1A775a2281261c282\",\n  \"signature\": \"0x8330cb1261c43bdb0076836320b7a360631e34086d0e066790a8ea48240c5b8d28b499044ec51735bd66bb0b167945bcda23923ca9d4cd8cb043f7d92fe9f51c1c\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/user/link-twitter-wallet",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"link-twitter-wallet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/dao/list?upcoming=true",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/dao/list?upcoming=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"dao",
+						"list"
+					],
+					"query": [
+						{
+							"key": "upcoming",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/dao?address=0x1234567890abcdef1234567890abcdef12345678",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"twitterId\": \"1234567890\",\n  \"timestamp\": \"2024-12-31T08:31:04.357Z\",\n  \"walletAddress\": \"0x162D5148d6E64B0C294A51A1A775a2281261c282\",\n  \"signature\": \"0x8330cb1261c43bdb0076836320b7a360631e34086d0e066790a8ea48240c5b8d28b499044ec51735bd66bb0b167945bcda23923ca9d4cd8cb043f7d92fe9f51c1c\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/dao?address=0x1234567890abcdef1234567890abcdef12345678",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"dao"
+					],
+					"query": [
+						{
+							"key": "address",
+							"value": "0x1234567890abcdef1234567890abcdef12345678"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
