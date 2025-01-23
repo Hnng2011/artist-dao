@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'ArtistDAO';
+  src: url('./assets/Cheyra.ttf') format('woff2'),
+    url('./assets/Cheyra.otf') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}

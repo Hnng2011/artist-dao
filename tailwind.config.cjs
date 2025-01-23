@@ -1,6 +1,7 @@
 const {
   default: flattenColorPalette,
 } = require('tailwindcss/lib/util/flattenColorPalette');
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -10,6 +11,7 @@ module.exports = {
       fontFamily: {
         audiowide: ['Audiowide', 'sans-serif'],
         lato: ['Lato', 'sans-serif'],
+        artistDAO: ['ArtistDAO', ...defaultTheme.fontFamily.sans],
       },
       animation: {
         aurora: 'aurora 60s linear infinite',
